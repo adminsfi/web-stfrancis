@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>SMK St. Francis</title>
+
+  <!--NAV BAR FILES-->
+  <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+  <!-- BootStrap CDN  -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <!-- Local CSS File -->
+  <link rel="stylesheet" href="css/index_style.css">
+
+</head>
+<body>
+
+<!--NAV BAR-->
+<div class="wrapper">
+  <header>
+    <nav>
+      <div class="menu-icon">
+        <i class="fa fa-bars fa-2x"></i>
+      </div>
+
+      <div class="logo">
+        <img src="https://i.imgur.com/2u55USo.png" id="logo_sek" />
+      </div>
+
+      <div class="menu">
+        <ul id="navbar-col">
+          <li id="name">SMK St. Francis<br><span class="motto">Age Quod Agis</span></li>
+          <li><a href="#">Mengenai Sekolah</a></li>
+          <li><a href="#">Aktiviti Sekolah</a></li>
+          <li><a href="#">Takwim Sekolah</a></li>
+          <li><a href="#">Hubungi</a></li>
+          <li><a href="#">Galeri</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+</div>
+
+<!--NAV BAR JS-->
+<script type="text/javascript">
+  // Menu-toggle button
+  $(document).ready(function() {
+    $(".menu-icon").on("click", function() {
+      $("nav ul").toggleClass("showing");
+    });
+  });
+  // Scrolling Effect
+  $(window).on("scroll", function() {
+    if ($(window).scrollTop()) {
+      $('nav').addClass('black');
+    } else { 
+      $('nav').removeClass('black');
+    }
+  })
+</script>
+
+</body>
+</html>
