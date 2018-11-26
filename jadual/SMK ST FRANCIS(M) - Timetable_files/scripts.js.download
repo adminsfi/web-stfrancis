@@ -1,0 +1,75 @@
+jQuery(document).ready(function($) {		
+	var $panel = $(".top-panel .l-page-width");
+			
+	$('.openbtn').on('click','a',function(e) {
+		
+		var $target = $(e.target);
+		
+		if($target.hasClass('socialhide')) {
+			$panel.stop(true,false).animate({
+				opacity: '0'
+			},200);
+			$target.blur();
+		}
+			
+		$panel.slideToggle(600, function(){
+			
+			$target.toggleClass('socialhide');
+			
+			if($(this).css('display') == 'block') {
+				$(this).stop(true,false).animate({
+					opacity:'1'
+				},200);
+			} else {
+				$(this).stop(true,false).animate({
+					opacity:'0'
+				},200);
+			}
+		});
+				
+		e.preventDefault();
+	});	
+
+    $('.lang').on('click','a', function(e) {
+        $('#langChooser').fadeToggle(200);
+        $(e.currentTarget).toggleClass('socialhide');
+        $('#langChooser a').toggleClass('socialhide');
+    }); 
+	
+	var $sform = $('#search-form');
+	
+	$('li.search').on('click', 'a', function(e) {
+		
+		var $target = $(e.target);
+		
+		if($target.hasClass('socialhide')) {
+		
+				$sform.stop(true,false).animate({
+//				width : 0,
+				opacity : 0
+			}, 'normal');
+			$target.removeClass('socialhide');	
+			
+		} else {
+		
+			$sform.stop(true,false).animate({
+//				width : '130px',
+				opacity : 1
+			}, 'normal').show();	
+			
+			$target.addClass('socialhide');
+			$sform.find('input[type="text"]').focus();
+		}
+		
+		e.preventDefault();
+	});
+	
+	function resizeHandler() {
+		
+	}
+	$(window).resize(function() {
+		resizeHandler();
+	});
+	
+	resizeHandler();
+});
