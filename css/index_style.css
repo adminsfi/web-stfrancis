@@ -21,7 +21,7 @@ body {
 header {
   width: 100%;
   height: 100vh;
-  background: url(../pics/garden.jpg) no-repeat 50% 50%;
+  background: url("https://i.ibb.co/dj49v25/garden.jpg") no-repeat 50% 50%;
   background-size: cover;
 }
 
