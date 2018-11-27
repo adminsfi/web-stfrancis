@@ -1,0 +1,22 @@
+#navbar{
+  z-index: 9999;
+}
+
+#name{
+  padding-top: 16px;
+}
+
+a:hover{
+  color: white;
+  text-decoration: none;
+}
+
+.aktiviti{
+  padding-top: 70px;
+}
+
+.card{
+  margin:30px;
+  margin-right: auto;
+  margin-left: auto;
+}

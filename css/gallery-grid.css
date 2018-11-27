@@ -1,0 +1,16 @@
+.container{
+  padding-top: 120px;
+}
+
+#navbar{
+  z-index: 9999;
+}
+
+#name{
+  padding-top: 16px;
+}
+
+a:hover{
+  color: white;
+  text-decoration: none;
+}
