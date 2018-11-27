@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SMK St. Francis</title>
+  <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+  <link rel="stylesheet" href="../css/mengenai.css">
+  <link href="../css/hover.css" rel="stylesheet" media="all">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <link rel="shortcut icon" href="../pics/logo.ico" />
+
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <nav>
+        <div class="menu-icon">
+          <i class="fa fa-bars fa-2x"></i>
+        </div>
+        <div class="logo">
+          <img src="../pics/logo-sek.png" id="logo_sek" />
+        </div>
+        <div class="name">
+          <p>SMK St. Francis</p>
+        </div>
+        <div class="menu">
+          <ul id="navbar-col">
+            <li><a href="#" class="hvr-grow">Mengenai Sekolah</a></li>
+            <li><a href="#" class="hvr-grow">Aktiviti Sekolah</a></li>
+            <li><a href="#" class="hvr-grow">Takwim Sekolah</a></li>
+            <li><a href="#" class="hvr-grow">Hubungi</a></li>
+            <li><a href="#" class="hvr-grow">Galeri</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- MENGENAI -->
+    <div class="info">
+      <h1>Mengenai Sekolah</h1><br>
+      <<img src="../pics/oldschool.png" alt="Old Picture of School"><br><br>
+      <p>Sekolah St. Francis didirikan oleh Rev. Fr. Deloutte, MEP pada 5 hb. April 1880 atas permintaan para jemaah Gereja St. Francis. Para jemaah gereja ini menghantar anak perempuan mereka ke Sekolah Convent of The Holy Infant Jesus yang
+        didirikan 20 tahun lebih awal, tetapi mereka menghadapi masalah dengan persekolahan anak lelaki mereka yang tidak dapat didaftarkan di Sekolah Tinggi Melaka yang berdekatan.
+
+        Bangunan Sekolah St. Francis yang pertama di Riverside ( di seberang jalan Gereja St. Francis di Jalan Laksamana ) merupakan bangunan dua tingkat yang dibina daripada batu dan kayu. Bilik-biliknya yang kecil dan gelap, tidak sesuai untuk
+        dijadikan sekolah. Kedudukannya di tepi sungai menyebabkan bangunan itu menjadi ‘sarang tikus’ dan digelar ‘Villa Tikus’ oleh generasi pelajar pertama.
+
+        Dokumen senarai nama pelajar dan guru asal sekolah tidak dapat dijumpai kecuali catatan bahawa bilangan murid pada hari pertama persekolahan ( 5hb. April 1880 ) adalah seramai 33 orang dan pengurus sekolah ketika itu ialah Paderi Gereja St.
+        Francis.
+
+        Sejak awal lagi, pegawai-pegawai pelajaran Kerajaan British mendapati bahawa bangunan sekolah dan kedudukannya tidak sesuai untuk dijadikan sekolah. Oleh sebab Malaya tidak mempunyai pusat latihan guru ketika itu, maka sekolah tidak dapat
+        dibekalkan dengan guru-guru yang terlatih. Ini menyebabkan jawatan guru di Malaya terdiri daripada mereka yang tidak dapat mencari pekerjaan lain. Dengan yuran sekolah sebanyak 2 sen, gaji guru adalah amat rendah.
+
+        Pada penghujung Ogos 1902, SFI terpaksa ditutup selepas peruntukan kerajaan diberhentikan. Hal ini berlaku kerana semasa lawatan tahunan pegawai pelajaran British mendapati bahawa SFI dianggap ‘tidak cekap’.</p>
+    </div>
+
+    <script type="text/javascript">
+      // Menu-toggle button
+      $(document).ready(function() {
+        $(".menu-icon").on("click", function() {
+          $("nav ul").toggleClass("showing");
+        });
+      });
+      // Scrolling Effect
+      $(window).on("scroll", function() {
+        if ($(window).scrollTop()) {
+          $('nav').addClass('black');
+        } else {
+          $('nav').removeClass('black');
+        }
+      })
+    </script>
+
+</body>
+
+</html>
