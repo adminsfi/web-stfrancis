@@ -148,6 +148,11 @@ nav ul li a {
   .menu-icon {
     display: block;
   }
+
+  .oldpicschool{
+    width: 80%;
+    height: auto;
+  }
 }
 
 /* mengenai sekolah */
